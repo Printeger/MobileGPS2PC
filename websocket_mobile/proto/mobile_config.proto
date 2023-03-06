@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package YOURMODULE.websocket_mobile;
+
+message Config {
+  //common
+  optional uint32 port = 1 [default = 8003];   
+  optional string gps_topic = 2;
+  optional string mobile_pos_topic = 3;
+}

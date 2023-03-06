@@ -1,0 +1,11 @@
+# Define all coms in DAG streaming.
+module_config {
+    module_library : "../bazel-bin/modules/YOURMODULE/websocket_mobile/libws_mobile.so"
+    components {
+        class_name : "WebMoblie"
+        config {
+            name : "WebMoblie"
+            config_file_path : "../modules/YOURMODULE/websocket_mobile/conf/websocket.pb.txt"
+        }
+    }
+}
